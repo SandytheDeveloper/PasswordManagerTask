@@ -20,7 +20,7 @@
 
 ###
 
-<p align="left">3. Users can securely add new passwords by providing details such as the account type (e.g., Gmail, Facebook, Instagram), username/email and password and Implemented a strong encryption algorithms to secure users password data.</p>
+<p align="left">3. Users can securely add new passwords by providing details such as the account type (e.g., Gmail, Facebook, Instagram), username/email and password and Users can also generate strong passwords with the "Auto-generate password" button. The generated password's strength will be displayed in a "Password Strength Meter" for your reference and Implemented a strong encryption algorithms to secure users password data.</p>
 
 ###
 
