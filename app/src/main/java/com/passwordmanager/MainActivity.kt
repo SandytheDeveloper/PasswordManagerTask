@@ -433,34 +433,4 @@ fun MyBottomSheet(
         )
     }
 
-    fun new() {
-
-        val name = "Sandeep"
-        val list = name.split("")
-        var newName = ""
-
-        for (i in list){
-            newName += i
-        }
-
-        println(newName)
-
-    }
-
-    fun list() {
-        val list : ArrayList<Int> = ArrayList()
-
-        for (i in 1..10){
-            list.add(i)
-        }
-
-
-
-        for (name in list){
-            println("name $name")
-        }
-
-    }
-
-
 }
