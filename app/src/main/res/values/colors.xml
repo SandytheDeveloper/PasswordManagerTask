@@ -14,5 +14,7 @@
     <color name="blue">#3F7DE3</color>
     <color name="button_black">#2C2C2C</color>
     <color name="button_red">#F04646</color>
+    <color name="yellow">#FFC107</color>
+    <color name="green">#00D809</color>
 
 </resources>

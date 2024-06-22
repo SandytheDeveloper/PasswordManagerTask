@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.ime
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.ClickableText
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -29,6 +30,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -224,6 +226,45 @@ fun DetailsBottomSheet(
                                 unfocusedBorderColor = colorResource(id = R.color.label_text_grey),
                             )
                         )
+
+                    }
+
+                    if (screenType.intValue == 2) {
+
+                        Spacer(modifier = Modifier.height(8.dp))
+
+                        var text = ""
+                        var color = 0
+                        Util.checkPasswordStrength(password.value) { t, c ->
+                            text = t
+                            color = c
+                        }
+
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween
+                        ) {
+
+                            Text(
+                                text,
+                                modifier = Modifier.padding(horizontal = 10.dp),
+                                color = colorResource(id = color),
+                                fontWeight = FontWeight.Medium
+                            )
+
+                            ClickableText(
+                                text = AnnotatedString("Auto-generate password"),
+                                modifier = Modifier.padding(horizontal = 10.dp),
+                                style = TextStyle(
+                                    colorResource(id = R.color.blue),
+                                    textAlign = TextAlign.End,
+                                    fontWeight = FontWeight.Medium
+                                ),
+                                onClick = {
+                                    password.value = Util.generatePassword()
+                                }
+                            )
+                        }
 
                     }
 

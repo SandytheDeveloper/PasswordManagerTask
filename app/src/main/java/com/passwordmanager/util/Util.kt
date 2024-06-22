@@ -4,6 +4,9 @@ import android.app.Activity
 import android.content.Context
 import android.util.Log
 import android.widget.Toast
+import com.passwordmanager.R
+import java.security.SecureRandom
+
 
 object Util {
 
@@ -88,6 +91,39 @@ object Util {
 
 
         }
+    }
+
+    fun checkPasswordStrength(password: String, onResult : (String,Int) -> Unit) {
+
+        if (password.isEmpty()){
+            onResult.invoke("",R.color.button_red)
+            return
+        }
+
+        val length = password.length
+        val set: Set<Char> = HashSet(mutableListOf('!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+'))
+
+        val hasLower = password.any { it.isLowerCase() }
+        val hasUpper = password.any { it.isUpperCase() }
+        val hasDigit = password.any { it.isDigit() }
+        val specialChar = password.any { set.contains(it) }
+
+        if (hasLower && hasUpper && hasDigit && specialChar && length >= 8){
+            onResult.invoke("Strong",R.color.green)
+        } else if (hasLower && hasUpper && specialChar && length >= 6) {
+            onResult.invoke("Medium",R.color.yellow)
+        } else {
+            onResult.invoke("Weak",R.color.button_red)
+        }
+    }
+
+    fun generatePassword() :String {
+
+        val charSet = ('A'..'Z') + ('a'..'z') + ('0'..'9') + listOf('!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+')
+        val random = SecureRandom()
+        return (1..10)
+            .map { charSet[random.nextInt(charSet.size)] }
+            .joinToString("")
     }
 
 }
