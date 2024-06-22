@@ -3,7 +3,7 @@
 ###
 
 <div align="left">
-  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManager/blob/master/finger_authentication.png"  />
+  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/master/finger_authentication.png"  />
 </div>
 
 ###
@@ -15,7 +15,7 @@
 ###
 
 <div align="left">
-  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManager/blob/master/home_screen.png"  />
+  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/master/home_screen.png"  />
 </div>
 
 ###
@@ -25,7 +25,7 @@
 ###
 
 <div align="left">
-  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManager/blob/master/add_new_account.png"  />
+  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/master/add_new_account.png"  />
 </div>
 
 ###
@@ -34,10 +34,10 @@
 
 ###
 
-<img align="left" height="400" src="https://github.com/SandytheDeveloper/PasswordManager/blob/master/view_account.png"  />
+<img align="left" height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/master/view_account.png"  />
 
 ###
 
-<img align="left" height="400" src="https://github.com/SandytheDeveloper/PasswordManager/blob/master/edit_account.png"  />
+<img align="left" height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/master/edit_account.png"  />
 
 ###
