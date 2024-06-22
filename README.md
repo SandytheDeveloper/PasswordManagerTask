@@ -26,6 +26,7 @@
 
 <div align="left">
   <img height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/main/add_new_account.png"  />
+  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/main/add_details.png"  />
 </div>
 
 ###
