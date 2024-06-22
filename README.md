@@ -3,7 +3,7 @@
 ###
 
 <div align="left">
-  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManager/blob/master/finger_authentication.png"  />
+  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/main/finger_authentication.png"  />
 </div>
 
 ###
@@ -15,17 +15,17 @@
 ###
 
 <div align="left">
-  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManager/blob/master/home_screen.png"  />
+  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/main/home_screen.png"  />
 </div>
 
 ###
 
-<p align="left">3. Users can securely add new passwords by providing details such as the account type (e.g., Gmail, Facebook, Instagram), username/email and password and Implemented a strong encryption algorithms to secure users password data.</p>
+<p align="left">3. Users can securely add new passwords by providing details such as the account type (e.g., Gmail, Facebook, Instagram), username/email and password and Users can also generate strong passwords with the "Auto-generate password" button. The generated password's strength will be displayed in a "Password Strength Meter" for your reference and Implemented a strong encryption algorithms to secure users password data.</p>
 
 ###
 
 <div align="left">
-  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManager/blob/master/add_new_account.png"  />
+  <img height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/main/add_new_account.png"  />
 </div>
 
 ###
@@ -34,10 +34,10 @@
 
 ###
 
-<img align="left" height="400" src="https://github.com/SandytheDeveloper/PasswordManager/blob/master/view_account.png"  />
+<img align="left" height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/main/view_account.png"  />
 
 ###
 
-<img align="left" height="400" src="https://github.com/SandytheDeveloper/PasswordManager/blob/master/edit_account.png"  />
+<img align="left" height="400" src="https://github.com/SandytheDeveloper/PasswordManagerTask/blob/main/edit_account.png"  />
 
 ###
