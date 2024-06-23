@@ -53,6 +53,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
@@ -88,8 +89,8 @@ class MainActivity : AppCompatActivity() {
             if (firstTime) {
                 firstTime = false
                 promptManager.showBiometricPrompt(
-                    title = "Fingerprint",
-                    description = "Authentication"
+                    title = stringResource(R.string.fingerprint),
+                    description = stringResource(R.string.authentication)
                 )
             }
 
@@ -145,7 +146,7 @@ fun PasswordListView(context: Context) {
     ) {
 
         Text(
-            text = "Password Manager",
+            text = stringResource(R.string.password_manager),
             style = TextStyle(
                 fontFamily = FontFamily(Font(R.font.sf_pro_display_bold)),
                 fontSize = 18.sp
@@ -206,7 +207,7 @@ fun PasswordListView(context: Context) {
                         Spacer(modifier = Modifier.width(5.dp))
 
                         Text(
-                            text = "*******",
+                            text = stringResource(R.string.star_text),
                             style = TextStyle(
                                 fontFamily = FontFamily(Font(R.font.sf_pro_display_bold)),
                                 fontSize = 20.sp
@@ -282,7 +283,8 @@ fun PasswordListView(context: Context) {
 
                 isSheetOpen = false
 
-                Util.showToastMessage(context, "Data Added Successfully", true)
+                Util.showToastMessage(context,
+                    context.getString(R.string.data_added_successfully), true)
             }
 
         }
@@ -317,7 +319,8 @@ fun PasswordListView(context: Context) {
 
             isDetailsSheetOpen = false
 
-            Util.showToastMessage(context, "Data Deleted Successfully", true)
+            Util.showToastMessage(context,
+                context.getString(R.string.data_deleted_successfully), true)
 
         }
     )
@@ -358,7 +361,7 @@ fun MyBottomSheet(
                         onValueChange = { accountName.value = it },
                         label = {
                             Text(
-                                "Account Name",
+                                stringResource(R.string.account_name),
                                 color = colorResource(id = R.color.label_text_grey),
                                 fontWeight = FontWeight.Medium
                             )
@@ -378,7 +381,7 @@ fun MyBottomSheet(
                         onValueChange = { email.value = it },
                         label = {
                             Text(
-                                "Username/ Email",
+                                stringResource(R.string.username_email),
                                 color = colorResource(id = R.color.label_text_grey),
                                 fontWeight = FontWeight.Medium
                             )
@@ -398,7 +401,7 @@ fun MyBottomSheet(
                         onValueChange = { password.value = it },
                         label = {
                             Text(
-                                "Password",
+                                stringResource(R.string.password),
                                 color = colorResource(id = R.color.label_text_grey),
                                 fontWeight = FontWeight.Medium
                             )
@@ -436,7 +439,7 @@ fun MyBottomSheet(
                         )
 
                         ClickableText(
-                            text = AnnotatedString("Auto-generate password"),
+                            text = AnnotatedString(stringResource(R.string.auto_generate_password)),
                             modifier = Modifier.padding(horizontal = 10.dp),
                             style = TextStyle(
                                 colorResource(id = R.color.blue),
@@ -464,7 +467,7 @@ fun MyBottomSheet(
                             containerColor = colorResource(id = R.color.button_black)
                         )
                     ) {
-                        Text("Add New Account", color = Color.White, fontWeight = FontWeight.Bold)
+                        Text(stringResource(R.string.add_new_account), color = Color.White, fontWeight = FontWeight.Bold)
                     }
 
                     Spacer(modifier = Modifier.height(40.dp))

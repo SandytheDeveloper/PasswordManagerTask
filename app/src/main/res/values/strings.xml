@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">PasswordManager</string>
+    <string name="auto_generate_password">Auto-generate password</string>
+    <string name="add_new_account">Add New Account</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="authentication">Authentication</string>
+    <string name="password_manager">Password Manager</string>
+    <string name="star_text">*******</string>
+    <string name="data_added_successfully">Data Added Successfully</string>
+    <string name="data_deleted_successfully">Data Deleted Successfully</string>
+    <string name="account_name">Account Name</string>
+    <string name="username_email">Username/ Email</string>
+    <string name="password">Password</string>
 </resources>
